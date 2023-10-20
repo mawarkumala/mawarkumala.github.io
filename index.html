@@ -5,35 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Nails</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="rose.css">
 </head>
 <body>
-    <div class="container">
     <!-- Navbar -->
-    <nav>
-        <a href="#" class="logo">Beauty Nails</a>
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#product-category">Product Category</a></li>
-            <li><a href="#gift">Gift</a></li>
-            <li><a href="#testimony">Testimony</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        </nav>
-    </div>
-    </header>
+<header>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <h1>Welcome to Beauty Nails</h1>
-        <p>Your source for beautiful nails.</p>
-        <img src="nail-art.jpg" alt="Nail Art Image">
-    </section>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler"></label>
+
+    <a href="#" class="logo">Beauty Nails<span></span></a>
+
+    <nav class="navbar">
+            <a href="#home">Home</a></li>
+            <a href="#product">Product</a>
+            <a href="#gift">Gift</a>
+            <a href="#service">Service</a>
+            <a href="#contact">Contact</a>
+    </nav>
+    <div class="icon">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+    </div>
+</header>
+<!--home-->
+<section class="home" id="home">
+        <div class="content">
+            <h3>PUNCY PASTELS</h3>
+            <span>Clean nail color and care </span>
+            <p>Your journey to glamour begins here. Let us pamper you with nails that reflect your unique style and brilliant personality</p>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+</section>
 
     <!-- Product Category Section -->
-    <section class="product-category" id="product-category">
-        <h2>Product Category</h2>
-        <div class="category-list">
+    <section class="product" id="product">
+        <h2>Product</h2>
         <div class="card-container">
             <div class="category-item">
                 <img src="nail-polish.jpg" alt="Nail Polish">
@@ -51,41 +60,120 @@
                 <a href="" class="btn">Read More</a>
             </div>
         </div>
-        </div>
     </section>
 
     <!-- Gift Section -->
     <section class="gift" id="gift">
-        <h2>Gifts for You</h2>
+        <h2>Gifts</h2>
         <p>Get a free nail art kit with your first purchase!</p>
         <img src="gift-box.jpg" alt="Gift Box">
     </section>
 
-    <!-- Testimony Section -->
-    <section class="testimony" id="testimony">
-        <h2>What Our Customers Say</h2>
-        <div class="testimony-item">
-            <img src="customer-1.jpg" alt="Customer 1">
-            <p>"I love the nail polish colors. They last a long time!"</p>
+    <!-- Service -->
+    <section class="service" id="service">
+        <div class="heading">
+            <h2>Services</h2>
+            <p>We provide best treatments services</p>
         </div>
-        <div class="testimony-item">
-            <img src="customer-2.jpg" alt="Customer 2">
-            <p>"Beauty Nails has the best nail extensions I've ever used."</p>
+  
+        <div class="services-container">
+            <!-- Box 1 -->
+            <div class="s-box">
+                <img src="ker.pnj.png" alt="">
+                <h3>Nails Studio</h3>
+                <p>Customers can enjoy direct service in our best studio</p>
+            </div>
+            <!-- Box 2 -->
+            <div class="s-box">
+                <img src="Trans.jpg.png" alt="">
+                <h3>Home Services</h3>
+                <p>Customers can enjoy nail treatments in the comfort of their own home.</p>
+            </div>
+            <!-- Box 3 -->
+            <div class="s-box">
+                <img src="deli.jpg.png" alt="">
+                <h3>Delivery</h3>
+                <p>Order via the website and we will delivery of quality nail care products to customers' homes.</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, please feel free to contact us.</p>
-        <a href="contact.html" class="contact-button">Contact Now</a>
+        <div class="container">
+        <span class="big-circle"></span>
+        <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's book now!</h3>
+          <p class="text">
+            Enjoy comfort and the best service from Beauty Nails</p>
+
+          <div class="info">
+            <div class="information">
+              <img src="location.png" class="icon" alt="" />
+              <p>JL. Mulyosari, ID 1667</p>
+            </div>
+            <div class="information">
+              <img src="email.png" class="icon" alt="" />
+              <p>beauty.nails@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="phone.png" class="icon" alt="" />
+              <p>123-456-789</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="beautybar.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Beauty Nails</p>
-    </footer>
-
     <!-- JavaScript -->
     <script src="rose.js"></script>
 </body>
