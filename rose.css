@@ -26,7 +26,19 @@ section{
     padding: 2rem 9%;
 }
 
-.btn{
+.links {
+  text-decoration: none;
+}
+
+.containerccc {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tombol{
     background: #333;
     display: inline-block;
     margin-top: 1rem;
@@ -35,11 +47,13 @@ section{
     padding: .9rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
+    text-decoration: none;
 }
 
-.btn:hover{
+.tombol:hover{
     background: var(--pink);
 }
+
 
 header{
     position: fixed;
@@ -57,7 +71,9 @@ header .logo {
     font-size: 3rem;
     color: wheat;
     font-weight: bold;
+    text-decoration: none;
 }
+
 
 header .logo span{
     color: var(--pink);
@@ -135,7 +151,8 @@ header .fa-bars{
     font-size: 40px;
     font-weight: bold;
     color: #333;
-}
+    padding-top: 15px;
+} 
 
 .product .card-container{
     display: flex;
@@ -144,7 +161,7 @@ header .fa-bars{
 }
 
 .product .category-item {
-    width: 290px;
+    width: 230px;
     background-color: palevioletred;
     border-radius: 10px;
     overflow: hidden;
@@ -167,7 +184,7 @@ header .fa-bars{
     color: #333;
 }
 
-.product .category-item btn {
+.product .category-item tombol {
     display: inline-block;
     padding: 8px 16px;
     text-decoration: none;
@@ -176,58 +193,91 @@ header .fa-bars{
 }
 
 
-.treatment{
-    position: relative;
-    padding: 35px;
-    background-color: rgb(250, 174, 232);
-}   
+.treatment {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  padding: 35px;
+  background-color: rgb(252, 115, 170); 
+  gap: 4 rem;
+}
 
 .treatment h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #333;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 10px;
 }
 
-.treatment .treat-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.flip-card {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
-.treatment .treatment-care {
-    width: 290px;
-    background-color: palevioletred;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 2);
-    margin: 20px;
-    text-align: center;
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.treatment .treatment-care img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-.treatment .treatment-care h3 {
-    font-size: 28px;
-    margin-bottom: 8px;
-    color: #333;
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
+.flip-card-front {
+  color: black;
+}
 
+.flip-card-back {
+  background-color: #ec4cb4;
+  color: white;
+  transform: rotateY(180deg);
+  
+}
 
 .service{
     background-color: #f194c1;
+    position: relative;
+    padding: 35px;
+    min-height: 30vh;
 }
 
-.service .heading{
-    font-size: 30px;
-    font-weight: bold;
-    color: #333;
+.service h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  padding-top: 15px;
+}
+
+.service h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 45px;
+}
+
+.service h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.service p {
+  font-size: 15px;
+  color: #333;
+  padding-bottom: 60px;
 }
 
 .service .services-container {
@@ -242,11 +292,8 @@ header .fa-bars{
 }
 
 .service .s-box img{
-    width: 60px;
-}
-
-.service .s-box h3{
-    margin: 4px 0 10px;
+    padding-top: 20px;
+    width: 140px;
 }
 
 .contact{
@@ -310,7 +357,7 @@ header .fa-bars{
   
 .contact .title {
     color: black;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 1.5rem;
     line-height: 1;
     margin-bottom: 0.7rem;
@@ -362,7 +409,7 @@ header .fa-bars{
     transform: translateY(0);
   }
   
-  .contact  .btn {
+  .contact  .tombol {
     padding: 0.6rem 1.3rem;
     background-color: #fff;
     border: 2px solid #fafafa;
@@ -376,7 +423,7 @@ header .fa-bars{
     margin: 0;
   }
   
-  .contact .btn:hover {
+  .contact .tombol:hover {
     background-color: transparent;
     color: #fff;
   }
