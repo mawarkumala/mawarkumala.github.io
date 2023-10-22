@@ -125,6 +125,7 @@ header .fa-bars{
 .home .content h3{
     font-size: 6rem;
     color: #333;
+    font-weight: bold;
 }
 
 .home .content span{
@@ -132,6 +133,7 @@ header .fa-bars{
     color: var(--pink);
     padding: 1rem 0;
     line-height: 1.5;
+    font-weight: bold;
 }
 
 .home .content p{
@@ -179,9 +181,11 @@ header .fa-bars{
 }
 
 .product .category-item h3 {
-    font-size: 28px;
+    font-size: 22px;
+    font-weight: bold;
     margin-bottom: 8px;
     color: #333;
+    padding-top: 5px;
 }
 
 .product .category-item tombol {
@@ -245,6 +249,10 @@ header .fa-bars{
   color: white;
   transform: rotateY(180deg);
   
+}
+
+.containerccc h1{
+  font-weight: bold;
 }
 
 .service{
